@@ -1,0 +1,14 @@
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/bin/Debug/net9.0/MyFirstConsoleApp
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/bin/Debug/net9.0/MyFirstConsoleApp.deps.json
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/bin/Debug/net9.0/MyFirstConsoleApp.runtimeconfig.json
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/bin/Debug/net9.0/MyFirstConsoleApp.dll
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/bin/Debug/net9.0/MyFirstConsoleApp.pdb
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/obj/Debug/net9.0/MyFirstConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/obj/Debug/net9.0/MyFirstConsoleApp.AssemblyInfoInputs.cache
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/obj/Debug/net9.0/MyFirstConsoleApp.AssemblyInfo.cs
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/obj/Debug/net9.0/MyFirstConsoleApp.csproj.CoreCompileInputs.cache
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/obj/Debug/net9.0/MyFirstConsoleApp.dll
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/obj/Debug/net9.0/refint/MyFirstConsoleApp.dll
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/obj/Debug/net9.0/MyFirstConsoleApp.pdb
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/obj/Debug/net9.0/MyFirstConsoleApp.genruntimeconfig.cache
+/Users/moadmin/faruqe/mydotnet/MyFirstConsoleApp/obj/Debug/net9.0/ref/MyFirstConsoleApp.dll
