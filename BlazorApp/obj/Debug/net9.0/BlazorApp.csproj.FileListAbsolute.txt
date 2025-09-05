@@ -76,3 +76,4 @@
 /Users/moadmin/faruqe/mydotnet/BlazorApp/obj/Debug/net9.0/BlazorApp.pdb
 /Users/moadmin/faruqe/mydotnet/BlazorApp/obj/Debug/net9.0/BlazorApp.genruntimeconfig.cache
 /Users/moadmin/faruqe/mydotnet/BlazorApp/obj/Debug/net9.0/ref/BlazorApp.dll
+/Users/moadmin/faruqe/mydotnet/BlazorApp/obj/Debug/net9.0/BlazorApp.sourcelink.json

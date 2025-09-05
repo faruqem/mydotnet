@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "CSSIsolation/1.0.0": {
+        "runtime": {
+          "CSSIsolation.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CSSIsolation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

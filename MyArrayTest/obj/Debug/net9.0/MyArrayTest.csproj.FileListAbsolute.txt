@@ -1,0 +1,15 @@
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/bin/Debug/net9.0/MyArrayTest
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/bin/Debug/net9.0/MyArrayTest.deps.json
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/bin/Debug/net9.0/MyArrayTest.runtimeconfig.json
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/bin/Debug/net9.0/MyArrayTest.dll
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/bin/Debug/net9.0/MyArrayTest.pdb
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/obj/Debug/net9.0/MyArrayTest.GeneratedMSBuildEditorConfig.editorconfig
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/obj/Debug/net9.0/MyArrayTest.AssemblyInfoInputs.cache
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/obj/Debug/net9.0/MyArrayTest.AssemblyInfo.cs
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/obj/Debug/net9.0/MyArrayTest.csproj.CoreCompileInputs.cache
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/obj/Debug/net9.0/MyArrayTest.sourcelink.json
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/obj/Debug/net9.0/MyArrayTest.dll
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/obj/Debug/net9.0/refint/MyArrayTest.dll
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/obj/Debug/net9.0/MyArrayTest.pdb
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/obj/Debug/net9.0/MyArrayTest.genruntimeconfig.cache
+/Users/moadmin/faruqe/mydotnet/MyArrayTest/obj/Debug/net9.0/ref/MyArrayTest.dll

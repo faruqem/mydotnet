@@ -1,0 +1,91 @@
+
+<p>Note: Wherever you see Your Project, replace that with your project name, like in this particular example it is: ReadJSONData</p>
+<br>
+<p><b>Data File: Project_Root/Data/Person.json</b></p>
+<p><pre><code>[
+  { "Id": 1, "Name": "Alice", "Age": 28 },
+  { "Id": 2, "Name": "Bob", "Age": 34 },
+  { "Id": 3, "Name": "Charlie", "Age": 22 }
+]</code></pre></p>
+
+<br>
+<p><b>Model File: Project_Root/Models/Person.cs</b></p>
+<p><pre><code>namespace YourProject.Models
+{
+    public class Person
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
+}</code></pre></p>
+
+<br>
+<p><b>ServiceFile: Project_Root/Services/PersonService.cs</b></p>
+<p><pre><code>using System.Text.Json;
+using YourProject.Models;
+
+namespace YourProject.Services
+{
+    public class PersonService
+    {
+        private readonly IWebHostEnvironment _env;
+
+        public PersonService(IWebHostEnvironment env)
+        {
+            _env = env;
+        }
+
+        public async Task&lt;List&lt;Person&gt;&gt; GetPersonsAsync()
+        {
+            var filePath = Path.Combine(_env.ContentRootPath, "Data", "Person.json");
+            
+            if (!File.Exists(filePath))
+                return new List&lt;Person&gt;();
+
+            using var stream = File.OpenRead(filePath);
+            return await JsonSerializer.DeserializeAsync&lt;List&lt;Person&gt;&gt;(stream) 
+                   ?? new List&lt;Person&gt;();
+        }
+    }
+}</code></pre></p>
+
+<br>
+<p><b>Register Service in Program.cs</b></p>
+<p>Add the following lines after //Add Services section in Program.cs:</p>
+<p><pre><code>// Register PersonService
+builder.Services.AddScoped&lt;PersonService&gt;();</code></pre></p>
+<br>
+
+<p><b>Blazor Component: Components/Pages/ListPerson.razor</b></p>
+<p><pre><code>@@page "/listperson"
+@@inject YourProject.Services.PersonService PersonService
+
+&lt;h3&gt;Person List&lt;/h3&gt;
+
+@@if (persons == null)
+{
+    &lt;p&gt;&lt;em&gt;Loading...&lt;/em&gt;&lt;/p&gt;
+}
+else if (!persons.Any())
+{
+    &lt;p>No persons found.&lt;/p>
+}
+else
+{
+    &lt;ul>
+        @@foreach (var person in persons)
+        {
+            &lt;li>@@person.Name (Age: @@person.Age)&lt;/li&gt;
+        }
+    &lt;/ul&gt;
+}
+
+@@code {
+    private List&lt;YourProject.Models.Person&gt;? persons;
+
+    protected override async Task OnInitializedAsync()
+    {
+        persons = await PersonService.GetPersonsAsync();
+    }
+}</code></pre></p>

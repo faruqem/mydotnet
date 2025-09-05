@@ -1,0 +1,31 @@
+@page "/listperson"
+@inject ReadJSONData.Services.PersonService PersonService
+
+<h3>Person List</h3>
+
+@if (persons == null)
+{
+    <p><em>Loading...</em></p>
+}
+else if (!persons.Any())
+{
+    <p>No persons found.</p>
+}
+else
+{
+    <ul>
+        @foreach (var person in persons)
+        {
+            <li>@person.Name (Age: @person.Age)</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<ReadJSONData.Models.Person>? persons;
+
+    protected override async Task OnInitializedAsync()
+    {
+        persons = await PersonService.GetPersonsAsync();
+    }
+}

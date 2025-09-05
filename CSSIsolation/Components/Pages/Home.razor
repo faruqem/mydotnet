@@ -1,0 +1,16 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>ASP.NET Core Blazor CSS Isolation</h1>
+
+<p><a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-9.0">Microsoft Documentation Link</a></p>
+<br>
+<p>To define component-specific styles, create a .razor.css file matching the name of the .razor file for the component in the same folder. The .razor.css file is a scoped CSS file.</p>
+<p>To apply changes to a child component, use the <b>::deep</b> pseudo-element to any descendant elements in the parent component's .razor.css file. The ::deep pseudo-element selects elements that are descendants of an element's generated scope identifier.</p>
+<br>
+<p>Example:</p>
+<p><pre><code>::deep h2 {
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}</code></pre></p>

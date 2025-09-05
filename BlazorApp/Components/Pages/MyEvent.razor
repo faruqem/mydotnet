@@ -1,0 +1,15 @@
+@page "/myevent"
+@rendermode InteractiveServer
+<PageTitle>My Event</PageTitle>
+<h2>My Event</h2>
+<input @onchange="InputChanged"/>
+<p>@message</p>
+
+@code {
+    string @message = "";
+    void InputChanged(ChangeEventArgs e)
+    {
+        //message = e.Value.ToString();
+        message = (string) e.Value;
+    }
+}

@@ -12,8 +12,11 @@
 @code {
     private int currentCount = 0;
 
+    public int IncrementAmount { get; set; } = 2;
+
     private void IncrementCount()
     {
-        currentCount++;
+        //currentCount++;
+        currentCount += IncrementAmount;
     }
 }

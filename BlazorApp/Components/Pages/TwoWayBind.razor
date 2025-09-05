@@ -1,0 +1,10 @@
+@page "/twowaybind"
+@rendermode InteractiveServer
+<PageTitle>Two Way Bind</PageTitle>
+<input @bind="myText" />
+<button @onclick="() => myText = string.Empty">Clear</button>
+<p>@myText</p>
+
+@code {
+    string myText = "";
+}

@@ -1,0 +1,15 @@
+/Users/moadmin/faruqe/mydotnet/ManageArray/bin/Debug/net9.0/ManageArray
+/Users/moadmin/faruqe/mydotnet/ManageArray/bin/Debug/net9.0/ManageArray.deps.json
+/Users/moadmin/faruqe/mydotnet/ManageArray/bin/Debug/net9.0/ManageArray.runtimeconfig.json
+/Users/moadmin/faruqe/mydotnet/ManageArray/bin/Debug/net9.0/ManageArray.dll
+/Users/moadmin/faruqe/mydotnet/ManageArray/bin/Debug/net9.0/ManageArray.pdb
+/Users/moadmin/faruqe/mydotnet/ManageArray/obj/Debug/net9.0/ManageArray.GeneratedMSBuildEditorConfig.editorconfig
+/Users/moadmin/faruqe/mydotnet/ManageArray/obj/Debug/net9.0/ManageArray.AssemblyInfoInputs.cache
+/Users/moadmin/faruqe/mydotnet/ManageArray/obj/Debug/net9.0/ManageArray.AssemblyInfo.cs
+/Users/moadmin/faruqe/mydotnet/ManageArray/obj/Debug/net9.0/ManageArray.csproj.CoreCompileInputs.cache
+/Users/moadmin/faruqe/mydotnet/ManageArray/obj/Debug/net9.0/ManageArray.sourcelink.json
+/Users/moadmin/faruqe/mydotnet/ManageArray/obj/Debug/net9.0/ManageArray.dll
+/Users/moadmin/faruqe/mydotnet/ManageArray/obj/Debug/net9.0/refint/ManageArray.dll
+/Users/moadmin/faruqe/mydotnet/ManageArray/obj/Debug/net9.0/ManageArray.pdb
+/Users/moadmin/faruqe/mydotnet/ManageArray/obj/Debug/net9.0/ManageArray.genruntimeconfig.cache
+/Users/moadmin/faruqe/mydotnet/ManageArray/obj/Debug/net9.0/ref/ManageArray.dll
