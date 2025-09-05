@@ -1,0 +1,19 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Code Separation Using Partial Class Approach</h1>
+
+<p><b>Create the Razor Component:</b></p>
+<p>Begin with a standard Blazor component, for example, MyCounter.razor, which contains both the HTML markup and the C# code within an @@code block.</p>
+
+<p><b>Create the Code-Behind File:</b></p>
+<p>In the same directory as your .razor file, create a new C# class file with the naming convention MyCounter.razor.cs. This file will serve as the code-behind for your component.</p>
+
+<p><b>Define the Partial Class:</b></p>
+<p>Inside the MyCounter.razor.cs file, define a partial class with the exact same name as your component (e.g., MyCounter):<code><pre>public partial class MyCounter</pre></code></p>
+
+<p><b>Move C# Code:</b></p>
+<p>Cut the C# code from the @@code block within your MyCounter.razor file and paste it into the MyCounter partial class defined in MyCounter.razor.cs. This includes fields, properties, methods, and event handlers.</p>
+<p><b>Remove the @@code Block:</b></p>
+<p>Once all C# code is moved, you can remove the @@code block from MyCounter.razor. The Razor component will now primarily contain only HTML and Razor markup, with its logic residing in the separate code-behind file.</p>

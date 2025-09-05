@@ -1,0 +1,27 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Code Separation Using Base Class Technique</h1>
+
+<p>Blazor component code separation using a base class involves creating a separate C# file that defines the component's logic and then inheriting from this class in the Razor component. This approach is useful for organizing code, promoting reusability, and making components more maintainable.</p>
+<br>
+<p>Steps for Implementing Blazor Code Separation with a Base Class:</p>
+<p><b>Create the Base Class File:</b></p>
+<ul>
+    <li>Create a new C# file in the same folder as your Razor component or in a designated folder for base classes.</li>
+    <li>Name this file with a .cs extension, and it's common practice to append "Base" to the component's name (e.g., MyCounterBase.cs for a MyCounter.razor component).</li>
+    <li>This class must inherit from Microsoft.AspNetCore.Components.ComponentBase <code><pre>using Microsoft.AspNetCore.Components;</pre></code> <code><pre>public class MyCounterBase : ComponentBase</pre></code></li>
+</ul>
+<br>
+<p><b>Inherit in the Razor Component:</b></p>
+<ul><li>In your Razor component file (e.g., MyCounter.razor), use the @@inherits directive to specify the base class you created: <code><pre>@@inherits YourAppName.Components.Pages.MyCounterBase</pre></code></li></ul>
+<h3>Key Considerations:</h3>
+<p><b>Access Modifiers:</b></p>
+<p>Members (fields, properties, methods) in the base class that need to be accessed from the Razor component should be declared as protected or public.</p>
+<p><b>Naming Conventions:</b></p>
+<p>While not strictly required, using a naming convention like ComponentNameBase for your base classes helps in identifying the purpose of the file.</p>
+<p><b>Benefits:</b></p>
+<p>This approach improves code organization, allows for easier testing of component logic, and facilitates code reuse across multiple components by inheriting from a common base class.</p>
+<p><b>Advantage over Partial Class approach:</b></p>
+<p>Multiple components can inherit the base class.</p>
