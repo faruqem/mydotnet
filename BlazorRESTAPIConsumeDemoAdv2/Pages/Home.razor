@@ -1,0 +1,39 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Consume a Simple REST API</h1>
+<br />
+<p>This is a simple Blazor WebAssembly application that demonstrates how to consume a REST API and display the data.</p>
+<p>The application fetches a list of posts from a public API and displays them on the "Fetch Data" page.</p>
+<p><a href = 'https://jsonplaceholder.typicode.com/posts' target="_blank">Public API link used for testng!</a> It returns JSON Data.</p>
+<br>
+<ol>
+    <li>Define a model: Create a new file "Models/Post.cs".</li>
+    <li>Create a service to call the API: Create a new file "Services/ApiService.cs"</li>
+    <li>Register the service. Edit "Program.cs"</li>
+    <li>Consume the API in a page. Create a new file: "Pages/FetchData.razor"</li>
+</ol>
+
+
+<p>Run the application and navigate to the "Fetch Data" page using the navigation menu to see the list of posts fetched from the API.</p>
+<br />
+<h3>To fetch a single post by ID dynamically with a button</h3>
+<ol>
+<li>Add a new method "GetPostByIdAsync(int id)" to the file "Services/ApiService.cs"</li>
+<li>Update the file "Pages/FetchData.razor" to add a new section below the fetch list of post section, 
+and a new method "LoadSinglePost()"in the @@code section below the first method.</li>
+</ol>
+
+<br />
+<h3>To handle error gracefully</h3>
+<ol>
+<li>In <code>Services/ApiService.cs</code>, wrap the <code>GetPostByIdAsync</code> in a try-catch:</li>
+<li>Modify <code>Pages/FetchData.razor</code> so it shows a status message when the post is not found.</li>
+</ol>
+
+<br />
+<p>In Adv2 project, we made the following changes: A spinner is shown while loading posts.</p>
+
+<hr />
+<p>Note: We created <code>BlazorRESTAPIConsumeDemoAdv2</code> project based on <code>BlazorRESTAPIConsumeDemoAdv</code> which was based on <code>BlazorRESTAPIConsumeDemo</code> project. For easier update, we did not change the namespace which remains the same as <code>BlazorRESTAPIConsumeDemo</code>.</p>

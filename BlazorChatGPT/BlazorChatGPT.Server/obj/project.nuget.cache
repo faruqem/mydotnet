@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "yuILp/40Cbc=",
+  "success": true,
+  "projectFilePath": "/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Server/BlazorChatGPT.Server.csproj",
+  "expectedPackageFiles": [
+    "/Users/moadmin/.nuget/packages/microsoft.aspnetcore.openapi/9.0.8/microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
+    "/Users/moadmin/.nuget/packages/microsoft.extensions.apidescription.server/9.0.0/microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
+    "/Users/moadmin/.nuget/packages/microsoft.openapi/1.6.25/microsoft.openapi.1.6.25.nupkg.sha512",
+    "/Users/moadmin/.nuget/packages/swashbuckle.aspnetcore/9.0.4/swashbuckle.aspnetcore.9.0.4.nupkg.sha512",
+    "/Users/moadmin/.nuget/packages/swashbuckle.aspnetcore.swagger/9.0.4/swashbuckle.aspnetcore.swagger.9.0.4.nupkg.sha512",
+    "/Users/moadmin/.nuget/packages/swashbuckle.aspnetcore.swaggergen/9.0.4/swashbuckle.aspnetcore.swaggergen.9.0.4.nupkg.sha512",
+    "/Users/moadmin/.nuget/packages/swashbuckle.aspnetcore.swaggerui/9.0.4/swashbuckle.aspnetcore.swaggerui.9.0.4.nupkg.sha512",
+    "/Users/moadmin/.nuget/packages/system.net.http.json/9.0.9/system.net.http.json.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

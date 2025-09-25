@@ -1,0 +1,12 @@
+/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/bin/Debug/net9.0/BlazorChatGPT.Shared.deps.json
+/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/bin/Debug/net9.0/BlazorChatGPT.Shared.dll
+/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/bin/Debug/net9.0/BlazorChatGPT.Shared.pdb
+/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/obj/Debug/net9.0/BlazorChatGPT.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/obj/Debug/net9.0/BlazorChatGPT.Shared.AssemblyInfoInputs.cache
+/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/obj/Debug/net9.0/BlazorChatGPT.Shared.AssemblyInfo.cs
+/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/obj/Debug/net9.0/BlazorChatGPT.Shared.csproj.CoreCompileInputs.cache
+/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/obj/Debug/net9.0/BlazorChatGPT.Shared.sourcelink.json
+/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/obj/Debug/net9.0/BlazorChatGPT.Shared.dll
+/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/obj/Debug/net9.0/refint/BlazorChatGPT.Shared.dll
+/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/obj/Debug/net9.0/BlazorChatGPT.Shared.pdb
+/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/obj/Debug/net9.0/ref/BlazorChatGPT.Shared.dll

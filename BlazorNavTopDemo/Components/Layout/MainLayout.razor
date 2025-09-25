@@ -1,0 +1,18 @@
+﻿@inherits LayoutComponentBase
+
+<div class="app-container">
+    <!-- Top Navbar -->
+    <header class="top-nav">
+        <NavMenu />
+    </header>
+
+    <!-- Main content -->
+    <main class="main-content px-4">
+        @Body
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bar">
+        <p>© @(DateTime.Now.Year) - BlazorNavTopDemo</p>
+    </footer>
+</div>

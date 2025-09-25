@@ -1,0 +1,30 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+<h2>Call JS from C# Keeping the JS File in App.web.js</h2>
+<p>In the new Blazor Web App model, Microsoft encourages putting your JavaScript in App.web.js instead of hardcoding &lt;script&gt; tags in App.razor.</p>
+
+<p><b>Notes:</b></p>
+<p>Create App.web.js in your project root if not exist.</p>
+<p>By default, Blazor automatically detects App.web.js if it’s in the project root and builds it into the app. 
+You don’t need to reference it in App.razor.</p>
+<p>(If you renamed it, you’d have to add a script reference manually.)</p>
+
+<br>
+<p>onAfterStarted runs after the Blazor runtime finishes loading.</p>
+
+<p>We attach functions to window.myFunctions so that Blazor C# can call them.</p>
+
+
+
+
+
+
+<br>
+<p><b>Advantages of App.web.js over &lt;script&gt; in App.razor:</b></p>
+
+<p>Cleaner separation (no inline &lt;script&gt; clutter).</p>
+
+<p>Runs automatically when Blazor starts.</p>
+
+<p>Recommended for .NET 8+ and especially .NET 9 Blazor Web Apps.</p>

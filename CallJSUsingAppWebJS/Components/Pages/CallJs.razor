@@ -1,0 +1,24 @@
+@page "/calljs"
+@inject IJSRuntime JS
+
+<h3>JS Interop Example (App.web.js)</h3>
+
+<button @onclick="ShowAlert">Show Alert</button>
+<button @onclick="AddNumbers">Add Numbers</button>
+
+<p>@result</p>
+
+@code {
+    private string? result;
+
+    private async Task ShowAlert()
+    {
+        await JS.InvokeVoidAsync("myFunctions.showAlert", "Hello from Blazor via App.web.js!");
+    }
+
+    private async Task AddNumbers()
+    {
+        int sum = await JS.InvokeAsync<int>("myFunctions.addNumbers", 10, 25);
+        result = $"10 + 25 = {sum}";
+    }
+}

@@ -1,0 +1,19 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Consume a Simple REST API</h1>
+<br />
+<p>This is a simple Blazor WebAssembly application that demonstrates how to consume a REST API and display the data.</p>
+<p>The application fetches a list of posts from a public API and displays them on the "Fetch Data" page.</p>
+<p><a href = 'https://jsonplaceholder.typicode.com/posts' target="_blank">Public API link used for testng!</a> It returns JSON Data.</p>
+<br>
+<ol>
+    <li>Define a model: Create a new file "Models/Post.cs".</li>
+    <li>Create a service to call the API: Create a new file "Services/ApiService.cs"</li>
+    <li>Register the service. Edit "Program.cs"</li>
+    <li>Consume the API in a page. Create a new file: "Pages/FetchData.razor"</li>
+</ol>
+
+
+<p>Run the application and navigate to the "Fetch Data" page using the navigation menu to see the list of posts fetched from the API.</p>

@@ -1,0 +1,18 @@
+@page "/graphics"
+@inject IJSRuntime JS
+
+<h3 class="text-center">🎨 Blazor Cool Graphics Demo</h3>
+<canvas id="gfxCanvas" width="800" height="500" style="border:1px solid #ccc"></canvas>
+
+@code {
+    private DotNetObjectReference<Graphics>? objRef;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            objRef = DotNetObjectReference.Create(this);
+            await JS.InvokeVoidAsync("graphicsDemo.init", "gfxCanvas");
+        }
+    }
+}

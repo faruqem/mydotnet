@@ -1,0 +1,10 @@
+/Users/moadmin/faruqe/mydotnet/BlazorChatApp/obj/Debug/net9.0/BlazorChatApp.csproj.AssemblyReference.cache
+/Users/moadmin/faruqe/mydotnet/BlazorChatApp/obj/Debug/net9.0/rpswa.dswa.cache.json
+/Users/moadmin/faruqe/mydotnet/BlazorChatApp/obj/Debug/net9.0/BlazorChatApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/moadmin/faruqe/mydotnet/BlazorChatApp/obj/Debug/net9.0/BlazorChatApp.AssemblyInfoInputs.cache
+/Users/moadmin/faruqe/mydotnet/BlazorChatApp/obj/Debug/net9.0/BlazorChatApp.AssemblyInfo.cs
+/Users/moadmin/faruqe/mydotnet/BlazorChatApp/obj/Debug/net9.0/BlazorChatApp.csproj.CoreCompileInputs.cache
+/Users/moadmin/faruqe/mydotnet/BlazorChatApp/obj/Debug/net9.0/BlazorChatApp.MvcApplicationPartsAssemblyInfo.cache
+/Users/moadmin/faruqe/mydotnet/BlazorChatApp/obj/Debug/net9.0/BlazorChatApp.RazorAssemblyInfo.cache
+/Users/moadmin/faruqe/mydotnet/BlazorChatApp/obj/Debug/net9.0/BlazorChatApp.RazorAssemblyInfo.cs
+/Users/moadmin/faruqe/mydotnet/BlazorChatApp/obj/Debug/net9.0/BlazorChatApp.sourcelink.json

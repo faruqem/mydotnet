@@ -1,0 +1,15 @@
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/bin/Debug/net9.0/TessituraConstSearch
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/bin/Debug/net9.0/TessituraConstSearch.deps.json
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/bin/Debug/net9.0/TessituraConstSearch.runtimeconfig.json
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/bin/Debug/net9.0/TessituraConstSearch.dll
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/bin/Debug/net9.0/TessituraConstSearch.pdb
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/obj/Debug/net9.0/TessituraConstSearch.GeneratedMSBuildEditorConfig.editorconfig
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/obj/Debug/net9.0/TessituraConstSearch.AssemblyInfoInputs.cache
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/obj/Debug/net9.0/TessituraConstSearch.AssemblyInfo.cs
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/obj/Debug/net9.0/TessituraConstSearch.csproj.CoreCompileInputs.cache
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/obj/Debug/net9.0/TessituraConstSearch.sourcelink.json
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/obj/Debug/net9.0/TessituraConstSearch.dll
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/obj/Debug/net9.0/refint/TessituraConstSearch.dll
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/obj/Debug/net9.0/TessituraConstSearch.pdb
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/obj/Debug/net9.0/TessituraConstSearch.genruntimeconfig.cache
+/Users/moadmin/faruqe/mydotnet/TessituraConstSearch/obj/Debug/net9.0/ref/TessituraConstSearch.dll

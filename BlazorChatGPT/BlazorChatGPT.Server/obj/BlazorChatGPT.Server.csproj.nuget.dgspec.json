@@ -1,0 +1,147 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Server/BlazorChatGPT.Server.csproj": {}
+  },
+  "projects": {
+    "/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Server/BlazorChatGPT.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Server/BlazorChatGPT.Server.csproj",
+        "projectName": "BlazorChatGPT.Server",
+        "projectPath": "/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Server/BlazorChatGPT.Server.csproj",
+        "packagesPath": "/Users/moadmin/.nuget/packages/",
+        "outputPath": "/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Server/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moadmin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/BlazorChatGPT.Shared.csproj": {
+                "projectPath": "/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/BlazorChatGPT.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/BlazorChatGPT.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/BlazorChatGPT.Shared.csproj",
+        "projectName": "BlazorChatGPT.Shared",
+        "projectPath": "/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/BlazorChatGPT.Shared.csproj",
+        "packagesPath": "/Users/moadmin/.nuget/packages/",
+        "outputPath": "/Users/moadmin/faruqe/mydotnet/BlazorChatGPT/BlazorChatGPT.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/moadmin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

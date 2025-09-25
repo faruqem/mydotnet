@@ -1,0 +1,29 @@
+@page "/calljs"
+
+@inject IJSRuntime JS
+
+<h3>JS Interop Example</h3>
+
+<button @onclick="ShowAlert">Show Alert</button>
+<button @onclick="AddNumbers">Add Numbers</button>
+
+<p>@result</p>
+<p>@test</p>
+
+@code {
+    private string? result;
+    private string? test = "";
+
+    private async Task ShowAlert()
+    {
+        test = "inside show alert";
+        await JS.InvokeVoidAsync("myFunctions.showAlert", "Hello from .NET 9 Blazor!");
+    }
+
+    private async Task AddNumbers()
+    {
+        test = "inside add numbers";
+        int sum = await JS.InvokeAsync<int>("myFunctions.addNumbers", 5, 7);
+        result = $"5 + 7 = {sum}";
+    }
+}

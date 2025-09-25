@@ -1,0 +1,32 @@
+@page "/fetchdata"
+@inject BlazorRESTAPIConsumeDemo.Services.ApiService ApiService
+
+<PageTitle>Posts</PageTitle>
+
+<h3>Posts from API</h3>
+
+@if (posts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <ul>
+        @foreach (var post in posts.Take(10))  
+        {
+            <li>
+                <strong>@post.Title</strong><br />
+                @post.Body
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private List<BlazorRESTAPIConsumeDemo.Models.Post>? posts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        posts = await ApiService.GetPostsAsync();
+    }
+}

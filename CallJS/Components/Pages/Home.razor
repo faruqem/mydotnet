@@ -1,0 +1,23 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Call Javascript</h1>
+
+<p>1. Add a javascript file at (create the "scripts" folder if needed): <code><pre>wwwroot/scripts/myScript.js</pre></code></p><br>
+<p>2. Add JS functions in your script file: <code><pre>// A simple JS function
+window.myFunctions = {
+    showAlert: function (message) {
+        alert("Message from Blazor: " + message);
+    },
+
+    addNumbers: function (a, b) {
+        return a + b;
+    }
+};</pre></code></p><br>
+<p>2. Reference the script in App.razor: <code><pre>&lt;script src="scripts/myScript.js"&gt;&lt;/script&gt;</pre></code></p><br>
+<p>3. Inject IJSRuntime in your component: <code><pre>@@inject IJSRuntime JS</pre></code></p><br>
+<p>4. Call JS function in your code, samples:
+    <code><pre>await JS.InvokeVoidAsync("myFunctions.showAlert", "Hello from .NET 9 Blazor!");</pre></code>
+    <code><pre>int sum = await JS.InvokeAsync&lt;int&gt;("myFunctions.addNumbers", 5, 7);</pre></code>
+</p>

@@ -1,0 +1,45 @@
+/* App container to stack header, content, and footer */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Top navigation bar */
+.top-nav {
+    background-color: #004080; /* dark blue */
+    padding: 0.75rem 1rem;
+    color: white;
+}
+
+.navbar .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a.active {
+    text-decoration: underline;
+}
+
+/* Main content grows to fill space between header and footer */
+.main-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+/* Footer bar */
+.footer-bar {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+}

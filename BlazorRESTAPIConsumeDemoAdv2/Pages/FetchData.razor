@@ -1,0 +1,97 @@
+@page "/fetchdata"
+@inject BlazorRESTAPIConsumeDemo.Services.ApiService ApiService
+
+<PageTitle>Posts</PageTitle>
+
+<h3>Posts from API</h3>
+
+@if (posts == null)
+{
+    <p><em>Loading posts...</em></p>
+}
+else
+{
+    <ul>
+        @foreach (var post in posts.Take(10)) 
+        {
+            <li>
+                <strong>@post.Title</strong><br />
+                @post.Body
+            </li>
+        }
+    </ul>
+}
+
+<hr />
+
+<h3>Fetch single post</h3>
+
+<input type="number" @bind="postId" min="1" max="100" />
+<button @onclick="LoadSinglePost">Get Post</button>
+
+@*@if (isLoading)
+{
+    <p><em>Loading post...</em></p>
+}*@
+@if (isLoading)
+{
+    <div class="d-flex align-items-center mt-2">
+        <div class="spinner-border text-primary me-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <span>Loading post...</span>
+    </div>
+}
+else if (!string.IsNullOrEmpty(errorMessage))
+{
+    <p style="color:red;">@errorMessage</p>
+}
+else if (singlePost != null)
+{
+    <div class="card" style="margin-top:10px;padding:10px;border:1px solid gray;">
+        <h4>@singlePost.Title</h4>
+        <p>@singlePost.Body</p>
+        <small>User ID: @singlePost.UserId | Post ID: @singlePost.Id</small>
+    </div>
+}
+
+@code {
+    private List<BlazorRESTAPIConsumeDemo.Models.Post>? posts;
+    private int postId = 1;
+    private BlazorRESTAPIConsumeDemo.Models.Post? singlePost;
+    private string? errorMessage;
+    private bool isLoading = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        posts = await ApiService.GetPostsAsync();
+    }
+
+    private async Task LoadSinglePost()
+    {
+        errorMessage = null;
+        singlePost = null;
+        isLoading = true;
+
+        if (postId < 1 || postId > 100)
+        {
+            errorMessage = "Please enter a Post ID between 1 and 100.";
+            isLoading = false;
+            return;
+        }
+
+        try
+        {
+            singlePost = await ApiService.GetPostByIdAsync(postId);
+
+            if (singlePost == null)
+            {
+                errorMessage = $"No post found with ID {postId}.";
+            }
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}

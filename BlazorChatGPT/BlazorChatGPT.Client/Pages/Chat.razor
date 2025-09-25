@@ -1,0 +1,38 @@
+@page "/chat"
+@using BlazorChatGPT.Shared
+@inject HttpClient Http
+
+<h3>Chat with API</h3>
+
+<input @bind="userMessage" placeholder="Type a message..." />
+<button @onclick="SendMessage">Send</button>
+
+<ul>
+    @foreach (var msg in messages)
+    {
+        <li><b>@msg.Role:</b> @msg.Content</li>
+    }
+</ul>
+
+@code {
+    private string userMessage = string.Empty;
+    private List<ChatMessage> messages = new();
+
+    private async Task SendMessage()
+    {
+        var msg = new ChatMessage { Role = "user", Content = userMessage };
+        var response = await Http.PostAsJsonAsync("https://localhost:7061/api/chat/send", msg);
+
+        if (response.IsSuccessStatusCode)
+        {
+            var reply = await response.Content.ReadFromJsonAsync<ChatMessage>();
+            if (reply != null)
+            {
+                messages.Add(msg);
+                messages.Add(reply);
+            }
+        }
+
+        userMessage = string.Empty;
+    }
+}
